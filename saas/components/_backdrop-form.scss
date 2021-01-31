@@ -85,7 +85,7 @@
   cursor: pointer;
 }
 
-.text-checkbox {
+/*.text-checkbox {
   position: relative;
   padding-left: 22px;
   font-size: $PrimeryTextSize;
@@ -114,7 +114,7 @@
 .checkbox:checked + .text-checkbox::after {
   background-image: url(../images/icon-check.svg);
   background-color: $accent-color;
-}
+}*/
 
 .politic-link {
   text-decoration: underline;
@@ -135,10 +135,37 @@
   fill: $accent-color;
 }
 
-.checkbox {
+/*.checkbox {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+}*/
+
+.checkbox ~ span::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid $primery-text-color;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + span::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border: 2px solid $accent-color;
+}
+
+.checkbox:hover ~ span::before,
+.checkbox:focus ~ span::before {
+  border: 2px solid $accent-color;
 }
