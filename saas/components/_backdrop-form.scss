@@ -85,37 +85,6 @@
   cursor: pointer;
 }
 
-/*.text-checkbox {
-  position: relative;
-  padding-left: 22px;
-  font-size: $PrimeryTextSize;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: $sec-text-color;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    transform: translateY(-50%);
-    background-color: $WhiteBgColor;
-    background-image: url(../images/icon-check-black.svg);
-    border-radius: 2px;
-
-    transition: background-color 250ms $trans-duration;
-  }
-}
-
-.checkbox:checked + .text-checkbox::after {
-  background-image: url(../images/icon-check.svg);
-  background-color: $accent-color;
-}*/
-
 .politic-link {
   text-decoration: underline;
   color: $accent-color;
@@ -135,14 +104,6 @@
   fill: $accent-color;
 }
 
-/*.checkbox {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}*/
-
 .checkbox ~ span::before {
   content: "";
   display: inline-flex;
@@ -159,7 +120,7 @@
 
 .checkbox:checked + span::before {
   background-color: var(--accent-color);
-  background-image: url(../images/icon-check.svg);
+  background-image: url(../images/icon-checkbox-checked.svg);
   background-size: contain;
   background-origin: border-box;
   border: 2px solid $accent-color;
