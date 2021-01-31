@@ -119,8 +119,8 @@
 }
 
 .checkbox:checked + span::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/icon-checkbox-checked.svg);
+  background-color: $accent-color;
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
   border: 2px solid $accent-color;
