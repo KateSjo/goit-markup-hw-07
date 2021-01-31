@@ -1,0 +1,28 @@
+.page-header {
+  background-color: $WhiteBgColor;
+  border-bottom: 1px solid #ececec;
+
+  & .conteiner {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
