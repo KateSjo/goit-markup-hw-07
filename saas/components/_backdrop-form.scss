@@ -131,19 +131,6 @@
   }
 }
 
-.checkbox ~ span::before {
-  content: "";
-  display: inline-flex;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-
-  border-radius: 2px;
-
-  transition: background-color 250ms $trans-duration;
-
-}
-
 .checkbox:checked + span::before {
   background-color: $accent-color;
   background-image: url(../images/icon-check.svg);
