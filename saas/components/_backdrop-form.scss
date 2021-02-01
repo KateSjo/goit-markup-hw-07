@@ -241,7 +241,7 @@
 
   color: $sec-text-color;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -258,8 +258,8 @@
   }
 }
 
-.checkbox:checked + .text-checkbox::after {
-  background-image: url(..images/icon-vector.svg);
+.checkbox:checked + .text-checkbox::before {
+  background-image: url(../images/icon-checkbox-checked.svg);
   background-color: $accent-color;
 }
 
