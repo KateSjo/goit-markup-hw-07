@@ -263,6 +263,11 @@
   background-color: $accent-color;
 }
 
+.checkbox:hover ~ .text-checkbox::before,
+.checkbox:focus ~ .text-checkbox::before  {
+  border: 2px solid var(--accent-color);
+}
+
 .politic-link {
   text-decoration: underline;
   color: $accent-color;
