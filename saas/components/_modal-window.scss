@@ -51,6 +51,7 @@
   transition: fill 250ms $trans-duration;
 }
 
-.close-modal:focus > .close-window {
+.close-modal:focus,
+.close-modal:hover {
   fill: $accent-color;
 }
