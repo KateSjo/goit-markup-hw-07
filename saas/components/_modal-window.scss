@@ -48,10 +48,12 @@
   background-color: #ffffff;
   cursor: pointer;
 
-  transition: fill 250ms $trans-duration;
+ transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal:focus,
 .close-modal:hover {
-  fill: $accent-color;
+  color: $accent-color;
+  cursor: pointer;
 }
