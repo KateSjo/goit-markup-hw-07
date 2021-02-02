@@ -265,7 +265,7 @@
 
 .checkbox:hover ~ .text-checkbox::before,
 .checkbox:focus ~ .text-checkbox::before  {
-  border-color: $accent-color);
+  background-color: $accent-color);
 }
 
 .politic-link {
