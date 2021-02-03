@@ -6,14 +6,6 @@
   margin: -1px;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +23,17 @@ li {
   display: flex;
 }
 
+.nav-auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .nav-item {
   margin-right: 50px;
 }
@@ -46,6 +49,7 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  font-weight: 500;
 }
 
 .nav-link {
@@ -116,10 +120,9 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px 15px 0px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .conteiner {
@@ -130,21 +133,9 @@ li {
   padding-right: 15px;
 }
 
-.header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
 .icon-contacts {
   margin-right: 10px;
   fill: currentColor;
-}
-
-body {
-  background-color: #ffffff;
-  font-family: Roboto, sens-serif;
 }
 
 .section-title {
@@ -322,6 +313,42 @@ body {
   cursor: pointer;
 }
 
+.text-checkbox {
+  position: relative;
+  padding-left: 22px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.text-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #ffffff;
+  background-image: url(../images/icon-check-black.svg);
+  border-radius: 2px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .text-checkbox::before {
+  background-image: url(../images/icon-checkbox-checked.svg);
+  border-color: #2196f3;
+}
+
+.checkbox:hover ~ .text-checkbox::before,
+.checkbox:focus ~ .text-checkbox::before {
+  border: 2px solid var(--accent-color);
+}
+
 .politic-link {
   text-decoration: underline;
   color: #2196f3;
@@ -342,34 +369,12 @@ body {
   fill: #2196f3;
 }
 
-.checkbox ~ span::before {
-  content: "";
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 2px solid #212121;
-  -webkit-transition-property: border;
-  transition-property: border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox:checked + span::before {
-  background-color: #2196f3;
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border: 2px solid #2196f3;
-}
-
-.checkbox:hover ~ span::before,
-.checkbox:focus ~ span::before {
-  border: 2px solid #2196f3;
+.checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .backdrop {
@@ -519,24 +524,22 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: center;
-          flex-direction: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  min-height: 70px;
+  height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .activities-text {
   margin: 0;
-  padding: 27px 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -596,12 +599,8 @@ body {
   margin-right: 0;
 }
 
-.team-pages {
-  margin-bottom: 30px;
-}
-
 .teams-social {
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .social-list {
@@ -862,6 +861,10 @@ footer .social-link:hover, footer .social-link:focus {
   right: 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .send-logo {
@@ -883,6 +886,7 @@ footer .social-link:hover, footer .social-link:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
 }
 
 .portfolio {
@@ -970,12 +974,6 @@ footer .social-link:hover, footer .social-link:focus {
 .project-link:focus, .project-link:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .project-content {
@@ -1369,5 +1367,24 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Roboto, sens-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */
