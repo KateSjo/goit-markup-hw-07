@@ -4,8 +4,7 @@
 
   & .conteiner {
     display: flex;
-    align-items: center;
-    padding: 0px 15px 0px 15px;
+    justify-content: space-between;
   }
 }
 
@@ -15,11 +14,6 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.header-contacts {
-  display: flex;
-  margin-left: auto;
 }
 
 .icon-contacts {
