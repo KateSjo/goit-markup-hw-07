@@ -1,11 +1,10 @@
 .page-header {
   background-color: $WhiteBgColor;
   border-bottom: 1px solid #ececec;
-  justify-content: space-between;
 
   & .conteiner {
     display: flex;
-    
+    justify-content: space-between;
   }
 }
 
