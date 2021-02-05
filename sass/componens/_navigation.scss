@@ -1,6 +1,13 @@
+.page-header .conteiner {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .nav-list {
