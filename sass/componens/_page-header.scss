@@ -2,10 +2,10 @@
   background-color: $WhiteBgColor;
   border-bottom: 1px solid #ececec;
 
-  /*.conteiner {
+  .conteiner {
     display: flex;
     justify-content: space-between;
-  }*/
+  }
 }
 
 .conteiner {
@@ -14,9 +14,6 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  
-   display: flex;
-    justify-content: space-between;
 }
 
 .icon-contacts {
