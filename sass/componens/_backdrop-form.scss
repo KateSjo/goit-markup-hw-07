@@ -29,7 +29,7 @@
 
   &:focus {
     outline: none;
-    border: 1px solid #2196f3;
+    border: 2px solid #2196f3;
     box-sizing: border-box;
     border-radius: 4px;
   }
@@ -72,7 +72,7 @@
 
   &:focus {
     outline: none;
-    border: 1px solid #2196f3;
+    border: 2px solid #2196f3;
     box-sizing: border-box;
     border-radius: 4px;
   }
@@ -104,7 +104,7 @@
     height: 15px;
     transform: translateY(-50%);
     background-color: $WhiteBgColor;
-    border: 2px solid #212121;
+    border: 2px solid #000000;
     border-radius: 2px;
 
     transition: background-color 250ms $trans-duration;
@@ -116,9 +116,9 @@
   border-color: $accent-color;
 }
 
-.checkbox:hover + .text-checkbox::before,
-.checkbox:focus + .text-checkbox::before {
-  border: 2px solid var(--accent-color);
+.checkbox:hover ~ .text-checkbox::before,
+.checkbox:focus ~ .text-checkbox::before {
+  border: 2px solid $accent-color;
 }
 
 .politic-link {
