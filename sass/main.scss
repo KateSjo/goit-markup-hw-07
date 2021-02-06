@@ -1,3 +1,7 @@
+@import "./base/fonts";
+@import "./base/normalize";
+@import "./base/body";
+@import "./base/images";
 @import "./utils/hidden";
 @import "./utils/variables";
 @import "./componens/navigation";
@@ -16,8 +20,5 @@
 @import "./componens/footer-form";
 @import "./componens/portfolio";
 @import "./componens/overlay";
-@import "./base/fonts";
-@import "./base/normalize";
-@import "./base/body";
-@import "./base/images";
+
 
