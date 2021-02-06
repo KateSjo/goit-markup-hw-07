@@ -327,13 +327,13 @@
 }
 
 .checkbox:checked + .text-checkbox::before {
-  background-image: url(../images/icon-checkbox-checked.svg);
+  background-image: url(../images/icon-check.svg);
   border-color: #2196f3;
 }
 
 .checkbox:hover ~ .text-checkbox::before,
 .checkbox:focus ~ .text-checkbox::before {
-  border: 2px solid var(--accent-color);
+  border: 2px solid #2196f3;
 }
 
 .politic-link {
