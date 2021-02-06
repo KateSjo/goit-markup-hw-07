@@ -6,16 +6,6 @@
   margin: -1px;
 }
 
-.page-header .conteiner {
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,12 +13,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-.nav-list,
-.nav-auth {
+.nav-list {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -85,7 +72,7 @@
 }
 
 .nav-link.current::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -122,6 +109,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -256,7 +246,7 @@
 
 .input-info:focus {
   outline: none;
-  border: 2px solid #2196f3;
+  border: 1px solid #2196f3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
@@ -298,7 +288,7 @@
 
 .comment-area:focus {
   outline: none;
-  border: 2px solid #2196f3;
+  border: 1px solid #2196f3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
@@ -325,7 +315,7 @@
 }
 
 .text-checkbox::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 0;
@@ -1044,59 +1034,49 @@ footer .social-link:hover, footer .social-link:focus {
   color: #ffffff;
 }
 
-/* roboto-regular - cyrillic */
+/* roboto-regular - latin_cyrillic-ext_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v20-cyrillic-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-cyrillic-regular.svg#Roboto") format("svg");
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* roboto-500 - cyrillic */
+/* roboto-500 - latin_cyrillic-ext_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/roboto-v20-cyrillic-500.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-cyrillic-500.svg#Roboto") format("svg");
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.woff2") format("woff2"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* roboto-700 - cyrillic */
+/* roboto-700 - latin_cyrillic-ext_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v20-cyrillic-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-cyrillic-700.woff") format("woff"), url("../fonts/roboto-v20-cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v20-cyrillic-700.svg#Roboto") format("svg");
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* roboto-900 - cyrillic */
+/* roboto-900 - latin_cyrillic-ext_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/roboto-v20-cyrillic-900.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-cyrillic-900.svg#Roboto") format("svg");
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff2") format("woff2"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* raleway-700 - cyrillic */
+/* raleway-700 - latin_cyrillic */
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/raleway-v18-cyrillic-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/raleway-v18-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v18-cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v18-cyrillic-700.woff") format("woff"), url("../fonts/raleway-v18-cyrillic-700.ttf") format("truetype"), url("../fonts/raleway-v18-cyrillic-700.svg#Raleway") format("svg");
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/raleway-v19-latin_cyrillic-700.woff2") format("woff2"), url("../../fonts/raleway-v19-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -1372,6 +1352,7 @@ summary {
 }
 
 body {
+  font-family: 'Roboto';
   background-color: #ffffff;
   font-family: Roboto, sens-serif;
 }
