@@ -116,8 +116,8 @@
   border-color: $accent-color;
 }
 
-.checkbox:hover ~ .text-checkbox,
-.checkbox:focus ~ .text-checkbox {
+.checkbox:hover + .text-checkbox,
+.checkbox:focus + .text-checkbox {
   border: 2px solid var(--accent-color);
 }
 
