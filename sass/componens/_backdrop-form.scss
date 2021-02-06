@@ -112,7 +112,7 @@
 }
 
 .checkbox:checked + .text-checkbox::before {
-    background-image: url(../images/icon-checkbox-checked.svg);
+    background-image: url(../images/icon-check.svg);
     border-color: $accent-color;
 }
 
