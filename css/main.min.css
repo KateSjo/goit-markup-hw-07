@@ -313,7 +313,7 @@
 }
 .checkbox:hover ~ .text-checkbox::before,
 .checkbox:focus ~ .text-checkbox::before {
-  border: 1px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 .politic-link {
   text-decoration: underline;
