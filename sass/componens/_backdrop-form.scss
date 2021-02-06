@@ -111,13 +111,13 @@
   }
 }
 
-.checkbox:checked + .text-checkbox {
+.checkbox:checked + .text-checkbox::before {
   background-image: url(../images/icon-check.svg);
   border-color: $accent-color;
 }
 
-.checkbox:hover + .text-checkbox,
-.checkbox:focus + .text-checkbox {
+.checkbox:hover + .text-checkbox::before,
+.checkbox:focus + .text-checkbox::before {
   border: 2px solid var(--accent-color);
 }
 
