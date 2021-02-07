@@ -1,13 +1,18 @@
 body {
-    font-family: 'Roboto';
-    background-color: $WhiteBgColor;
-    font-family: Roboto, sens-serif;
+  background-color: $WhiteBgColor;
+  font-family: Roboto, sens-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
