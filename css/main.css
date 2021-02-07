@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.navigation .logo {
+  margin-right: 93px;
+}
+
 .nav-list {
   margin: 0;
   padding: 0;
@@ -86,7 +90,6 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 93px;
   padding: 23px 0 26px 0;
 }
 
@@ -1422,6 +1425,12 @@ a {
 
 li {
   list-style-type: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 img {
