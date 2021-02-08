@@ -15,6 +15,7 @@
 }
 
 .input-info {
+  position: relative;
   display: block;
   min-width: 448px;
   min-height: 40px;
@@ -129,7 +130,11 @@
 .form-icon {
   position: absolute;
   top: 50%;
+  left: 12px;
   transform: translateY(-50%);
+  /*top: 11px;
+  left: 12px;
+  transform: translateY(100%);*/
   fill: $primery-text-color;
 
   transition: fill 250ms $trans-duration;
